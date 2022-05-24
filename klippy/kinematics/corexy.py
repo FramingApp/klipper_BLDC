@@ -6,7 +6,7 @@
 import logging, math
 import stepper
 
-class CoreXYKinematics:
+class CoreXYKinematics:   #HARRY MOD: THIS IS WHERE STEPS ARE GENERATED FROM TRAPQ
     def __init__(self, toolhead, config):
         # Setup axis rails
         self.rails = [stepper.LookupMultiRail(config.getsection('stepper_' + n))

@@ -144,7 +144,7 @@ check_active(struct stepper_kinematics *sk, struct move *m)
 
 // Generate step times for a range of moves on the trapq
 int32_t __visible
-itersolve_generate_steps(struct stepper_kinematics *sk, double flush_time)
+itersolve_generate_steps(struct stepper_kinematics *sk, double flush_time) //HARRY MOD: THIS IS WHERE STEPS ARE GENERATED FROM TRAP QUE
 {
     double last_flush_time = sk->last_flush_time;
     sk->last_flush_time = flush_time;
